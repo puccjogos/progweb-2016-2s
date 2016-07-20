@@ -1,0 +1,20 @@
+site_name: ProgWeb - 2016 - 2S
+pages:
+- Home: 'index.md'
+#- Aulas:
+#    - 'A01 - Produção sonora' : 'aulas/a01-producao-sonora.md'
+#    - 'A02 - Som digital' : 'aulas/a02-som-digital.md'
+#    - 'A03 - Efeitos sonoros' : 'aulas/a03-efeitos-sonoros.md'
+#- 'Mais infos':
+#    - Ferramentas : 'ferramentas.md'
+#    - Referências : 'referencias.md'
+theme: bootstrap
+extra_css:
+  - css/extra.css
+extra_javascript:
+  - js/extra.js
+markdown_extensions:
+  - smarty
+  - sane_lists
+#site_favicon: 'imgs/singing.gif'
+repo_url: https://github.com/puccjogos/progweb-2016-2s
