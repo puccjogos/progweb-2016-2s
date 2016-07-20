@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,400italic,700italic);
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", Arial;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", "Roboto", Arial;
+}
+
+@media screen {
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color:#444;
+    padding-bottom: 0.25em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color:#555;
+  }
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color:#666;
+    padding-top: 0.25em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 4em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color:#444;
+    padding-bottom: 0.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color:#555;
+  }
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color:#666;
+    padding-top: 0.25em;
+  }
+}
+
+a {
+  color: #176adb;
+}
+
+a:hover {
+  color:black;
+}
+
+li.main {
+    font-family: "Montserrat", "Roboto", Arial;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+div[role="main"] img {
+    max-width: 100%;
+}
+
+footer p {
+    text-align: right;
+}
