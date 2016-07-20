@@ -6,73 +6,66 @@ Este site é a apostila digital da disciplina *Programação de jogos para web*,
 
 ## Cronograma
 
-| Data  | Conteúdo                                                   |
-|-------|------------------------------------------------------------|
-| 04/08 | Introdução à produção sonora e som digital                 |
-| 11/08 | História do som em videogames                              |
-| 18/08 | Percepção sonora e musical                                 |
-| 25/08 | Efeitos sonoros                                            |
-| 01/09 | Oficina: Síntese e edição de efeitos sonoros               |
-| 08/09 | Oficina: Captação de áudio                                 |
-| 15/09 | *Semana Integrada*                                         |
-| 22/09 | Oficina: Proposta de direção de áudio para Proj3           |
-| 29/09 | Oficina: Middlewares de áudio (FMOD)                       |
-| 06/10 | Apresentações e debate sobre propostas de direção de áudio |
-| 13/10 | Oficina: Implementação de som (SFX)                        |
-| 20/10 | Oficina: Implementação de som (Música)                     |
-| 27/10 | Música: história e teoria                                  |
-| 03/11 | Música: ferramentas e composição                           |
-| 10/11 | Voice over                                                 |
-| 17/11 | Mixagem de áudio                                           |
-| 24/11 | Oficina: Mixagem para jogos (Unity e FMOD)                 |
-| 01/12 | Prova individual                                           |
-| 08/12 | *Feriado*                                                  |
-| 15/12 | Prova de recuperação e fechamento                          |
+| Data  | Conteúdo                                           |
+|-------|----------------------------------------------------|
+| 05/08 | Introdução a jogos web                             |
+| 12/08 | Tecnologias da web                                 |
+| 19/08 | Introdução ao Javascript                           |
+| 26/08 | Introdução ao Phaser / Organização de projeto web  |
+| 02/09 | Inputs e movimento / Oficina de jogo individual    |
+| 09/09 | Workflow de assets / Oficina de jogo individual    |
+| 16/09 | *Semana Integrada*                                 |
+| 23/09 | Oficina de jogo individual                         |
+| 30/09 | Debate sobre jogos individuais / post-mortem       |
+| 07/10 | Introdução a Node.js / Oficina de jogo coletivo    |
+| 14/10 | Sockets e multiplayer por turnos                   |
+| 21/10 | Sockets e multiplayer em tempo real                |
+| 28/10 | Persistência e REST / Oficina de jogo coletivo     |
+| 04/11 | Integração com serviços / Oficina de jogo coletivo |
+| 11/11 | Oficina de jogo coletivo                           |
+| 18/11 | Deploy, publicação e controle de qualidade         |
+| 25/11 | Debate e apresentações de jogos coletivos          |
+| 02/12 | Desenvolvimento de apps para a web: MEAN           |
+| 09/12 | *Feriado*                                          |
+| 16/12 | Fechamento da discplina                            |
 
 ## Objetivos da disciplina
 
 #### Ementa
 
-Produção de áudio no meio digital. Ferramentas e técnicas para produção de áudio em versões digitais. Planejamento e elaboração de mensagens e sons para peças no formato digital. Discernimento e definição dos formatos sonoros.
+Criar sistemas remotos e distribuídos para suportar aplicações de entretenimento digital. Utilizar programas de desenvolvimento de conteúdo e entretenimento digital para web. Tendências da área, em especial a introdução de novas tecnologias e sua integração com diferentes tecnologias para web.
 
 #### Objetivos gerais
 
-Compreender a função narrativa do som em obras audiovisuais, priorizando a produção em Jogos Digitais.
+Preparar alunos para o desenvolvimento de jogos para o ambiente web. Desenvolver um repertório de ferramentas variadas e de métodos ágeis de criação de jogos digitais. Incentivar experimentação e inovação dentro do contexto dos jogos para web.
 
 #### Objetivos específicos
 
-Produzir trilha sonora. Criar sons para ambientação. Editar trilhas sonoras em sincronismo de imagem e som. Implementar sons em um jogo digital.
+Formar um repertório de ferramentas para a criação de jogos para web. Capacitar o aluno para avaliar a adequação de diferentes técnicas e ferramentas que apóiem diferentes processos criativos de jogos para web. Elaborar documentação e reflexão apropriada e utilizar métodos de trabalho voltados para o desenvolvimento ágil. Planejar e realizar jogos para web utilizando boas práticas e metodologias consolidadas.
 
 #### Conteúdo programático
 
-1. Evolução histórica dos sistemas de gravação e reprodução de áudio;
-2. Microfones: tipos físicos e utilização;
-3. Técnicas de captação de som direto;
-4. Percepção do universo sonoro;
-5. Uso de som direto e/ou dublagem em obras audiovisuais;
-6. Conceito de trilha sonora;
-7. Conceito de decupagem sonora;
-8. Uso narrativo da trilha sonora em obras audiovisuais;
-9. Implementação de sons em jogos digitais;
-10. Sintetização e música procedural;
+A importância de usar ferramentas adequadas para o desenvolvimento rápido de jogos será trabalhada através de experiências práticas de planejamento e produção de jogos digitais, assim como da apresentação de conceitos que apóiem essa prática.
+
+- Contexto técnico, cultural e estético de jogos na web.
+- Ferramentas para programação de jogos para web.
+- Processos, metodologias e boas práticas de desenvolvimento web.
+- Ferramentas de produção: colaboração, versionamento, compartilhamento.
+- Introdução a tecnologias web distribuídas e multi-plataforma e seu potencial para jogos.
 
 ## Avaliação
 
-Avaliação dessa disciplina apresenta três componentes:
+A avaliação será feita através da entrega de dois jogos digitais, juntamente com documentação e relatórios apropriados. O primeiro jogo, individual e de pequeno escopo, será entregue na metade da disciplina e o segundo, coletivo e mais bem acabado, ao final.
 
-1. Avaliação individual continuada: atividades práticas e teóricas ao longo da disciplina.
-2. Avaliação coletiva continuada: atividades práticas coletivas ao longo da disciplina.
-3. Avaliação final individual: prova escrita no final do curso.
+Cada entrega de jogo digital deve conter os seguintes elementos: documento de game design, protótipos, versão final e post-mortem. Um jogo só será considerado devidamente entregue se o professor tiver acesso a todos esses elementos. Cada elemento será avaliado segundo sua adequação temática e de escopo e sua qualidade técnica. A nota máxima para o jogo individual é de 5 pontos e do jogo coletivo, 5 pontos.
 
 #### Nota final  
 
-(Atividades individuais x 3) + (Atividades coletivas x 3) + (Prova individual x 4)
+Jogo individual + Jogo coletivo
 
 #### Recuperação
 
-As atividades com avaliação insuficiente poderão ser refeitas e entregues em novas datas para nova avaliação. Será realizada a média simples da avaliação anterior com a recuperação. Atividades não entregues não terão possibilidade de nova avaliação.
-
-A prova individual terá uma avaliação de recuperação, cuja nota será utilizada em média simples com a nota anterior.
+Para a recuperação, será realizado um jogo web individual, cujo escopo e proposta será acordado entre professor e aluno, que será avaliado e terá nota máxima equivalente ao trabalho anterior que substitui. Exercícios não entregues não terão possibilidade de nova avaliação.
 
 ## Integridade Acadêmica
 

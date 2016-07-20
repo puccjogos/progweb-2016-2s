@@ -1,8 +1,8 @@
 site_name: ProgWeb - 2016 - 2S
 pages:
 - Home: 'index.md'
-#- Aulas:
-#    - 'A01 - Produção sonora' : 'aulas/a01-producao-sonora.md'
+- Aulas:
+    - 'A01 - Introdução a jogos web' : 'aulas/a01-introducao-a-jogos-web.md'
 #    - 'A02 - Som digital' : 'aulas/a02-som-digital.md'
 #    - 'A03 - Efeitos sonoros' : 'aulas/a03-efeitos-sonoros.md'
 #- 'Mais infos':
