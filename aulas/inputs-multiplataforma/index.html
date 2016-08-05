@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Inputs multiplataforma - ProgWeb - 2016 - 2S</title>
+
+        <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">ProgWeb - 2016 - 2S</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aulas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../introducao-a-jogos-web/">Introdução a jogos web</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../tecnologias-da-web/">Tecnologias da web</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../introd-javascript/">Introdução ao Javascript</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../introd-phaser/">Introdução ao Phaser</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Inputs multiplataforma</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../workflow/">Workflow de assets e dados locais</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../introd-node/">Introdução ao Node.js</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais infos <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ferramentas/">Ferramentas</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../referencias/">Referências</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../introd-phaser/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../workflow/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/puccjogos/progweb-2016-2s">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#inputs-multiplataforma">Inputs multiplataforma</a></li>
+        
+            <li><a href="#teclado">Teclado</a></li>
+        
+            <li><a href="#mouse-e-toque">Mouse e toque</a></li>
+        
+            <li><a href="#gamepad">Gamepad</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="inputs-multiplataforma">Inputs multiplataforma</h2>
+<p>Exitem duas etapas principais para o desenvolvimento de sistemas de input multi-plataformas. Primeiro, é importante desacoplar as ações no mundo do jogo de um tipo de entrada. Segundo, é importante associar essa nova camada de abstração a cada uma das plataformas desejadas, adaptando conforme necessário. Para ajudar nesse processo, vamos trabalhar com a criação de objetos para auxiliar nosso input.</p>
+<p>A própria biblioteca também agrupa uma série de funcionalidade de input dentro do próprio <code>Sprite</code>, na propriedade <code>sprite.input</code>, do tipo <code>InputHandler</code>. A documentação desta classe está disponível <a href="http://docs.phaser.io/Phaser.InputHandler.html#toc0">aqui</a>.</p>
+<ul>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Input.html">Phaser.Input</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.InputHandler.html">Phaser.InputHandler</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Key.html">Phaser.Key</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Keyboard.html">Phaser.Keyboard</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Pointer.html">Phaser.Pointer</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Mouse.html">Phaser.Mouse</a></li>
+<li>Docs: <a href="http://docs.phaser.io/Phaser.Gamepad.html">Phaser.Gamepad</a></li>
+</ul>
+<h3 id="teclado">Teclado</h3>
+<p>Exemplo: <a href="http://phaser.io/examples/v2/input/cursor-key-movement">usando teclas direcionais</a></p>
+<pre><code class="javascript">cursors = game.input.keyboard.createCursorKeys();
+...
+if (cursors.up.isDown)
+{
+    ...
+}
+</code></pre>
+
+<p>Exemplo: <a href="http://phaser.io/examples/v2/input/keyboard-hotkeys">teclas com funções</a></p>
+<pre><code class="javascript">key1 = game.input.keyboard.addKey(Phaser.Keyboard.ONE);
+key1.onDown.add(callback, this);
+</code></pre>
+
+<p>Exemplo: <a href="http://phaser.io/examples/v2/input/override-default-controls">bloquear eventos-padrão do browser</a></p>
+<pre><code class="js">game.input.keyboard.addKeyCapture([
+    Phaser.Keyboard.LEFT,
+    Phaser.Keyboard.RIGHT,
+    Phaser.Keyboard.UP,
+    Phaser.Keyboard.DOWN,
+    Phaser.Keyboard.SPACEBAR
+]);
+</code></pre>
+
+<h3 id="mouse-e-toque">Mouse e toque</h3>
+<p>Phaser usa o conceito de <em>pointer</em> tanto para o mouse quanto para interfaces de toque. A classe Pointer guarda uma série de informações relativas à posição, velocidade, id e estado dos eventos de toque e mouse.</p>
+<ul>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=button%20open%20popup.js&amp;t=button%20open%20popup&amp;phaser_version=v2.4.3&amp;">eventos de mouse/toque</a></li>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=out%20of%20game.js&amp;t=out%20of%20game&amp;phaser_version=v2.4.3&amp;">toque fora do jogo</a></li>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=multi%20touch.js&amp;t=multi%20touch&amp;phaser_version=v2.4.3&amp;">multi-toque</a>.</li>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=touch%20joystick.js&amp;t=touch%20joystick&amp;phaser_version=v2.4.3&amp;">joystick por toque</a></li>
+</ul>
+<h3 id="gamepad">Gamepad</h3>
+<p>O Phaser tem suporte a gamepads, como de XBox 360 ou qualquer outro conectado ao dispositivo PC. No entanto, este suporte ainda é experimental e instável.</p>
+<ul>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=gamepad%20debug.js&amp;t=gamepad%20debug&amp;phaser_version=v2.4.3&amp;">tela de teste de gamepad</a></li>
+<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=gamepad%20multiple%20pads.js&amp;t=gamepad%20multiple%20pads&amp;phaser_version=v2.4.3&amp;">múltiplos gamepads</a></li>
+</ul></div>
+        </div>
+
+	<footer class="col-md-12">
+		<hr>
+		
+		<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+	</footer>
+
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/extra.js"></script>
+    </body>
+</html>

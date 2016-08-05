@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Introdução ao Node.js - ProgWeb - 2016 - 2S</title>
+
+        <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">ProgWeb - 2016 - 2S</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aulas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../introducao-a-jogos-web/">Introdução a jogos web</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../tecnologias-da-web/">Tecnologias da web</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../introd-javascript/">Introdução ao Javascript</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../introd-phaser/">Introdução ao Phaser</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../inputs-multiplataforma/">Inputs multiplataforma</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../workflow/">Workflow de assets e dados locais</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Introdução ao Node.js</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais infos <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ferramentas/">Ferramentas</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../referencias/">Referências</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../workflow/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../ferramentas/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/puccjogos/progweb-2016-2s">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#introducao-ao-nodejs">Introdução ao Node.js</a></li>
+        
+            <li><a href="#plataforma-event-driven-e-assincrona">Plataforma event-driven e assíncrona</a></li>
+        
+            <li><a href="#a-aplicacao-e-o-servidor">A aplicação é o servidor</a></li>
+        
+    
+        <li class="main "><a href="#exercicio">Exercício</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="introducao-ao-nodejs">Introdução ao <a href="https://nodejs.org/en/">Node.js</a></h2>
+<p>Node.js é uma plataforma para executar aplicações em JavaScript que faz uso da máquina virtual V8 (a mesma do Google Chrome) para compilar JavaScript em linguagem de máquina, o que aumenta muito sua performance. A plataforma Node.js foi criada para uso em aplicações com uso intensivo de dados e comunicação em tempo real. Por isso, é cada vez mais usada em games e aplicativos web de colaboração e streaming. Por ser escrita toda em JS, a plataforma Node foi criada conta com as seguintes vantagens:</p>
+<ul>
+<li>Permitir a criação de aplicações web com uma stack em uma única linguagem.</li>
+<li>Permitir o uso nativo de JSON, um formato bastante popular para troca de dados.</li>
+<li>JavaScript é uma linguagem final, ou seja, outras linguagens compilam para JavaScript.</li>
+</ul>
+<p>Abaixo vamos discutir alguns dos aspectos mais relevantes do Node.js para seu uso no desenvolvimento de aplicações web (e jogos).</p>
+<h3 id="plataforma-event-driven-e-assincrona">Plataforma event-driven e assíncrona</h3>
+<p>O Node, assim como browsers, tem uma arquitetura baseada no uso de eventos de forma assíncrona, ou seja, tem um loop de eventos como forma de comunicação entre funções e não bloqueiam a execução quando realizando operações de entrada e saída (I/O).</p>
+<p><img alt="Diagrama de fluxo no Node.js" src="" /></p>
+<p>Aqui vemos um exemplo de eventos e assincronia no browser.</p>
+<pre><code class="JavaScript">// usando a biblioteca jQuery
+$.post('/resource.json', function (data) {
+    console.log(data)
+})
+</code></pre>
+
+<p>Já em uma aplicação Node no servidor, seria:</p>
+<pre><code class="JavaScript">var fs = require(&quot;fs&quot;)
+fs.readFile(&quot;./resource.json&quot;, function (err, data) {
+    console.log(data)
+})
+</code></pre>
+
+<h3 id="a-aplicacao-e-o-servidor">A aplicação é o servidor</h3>
+<p>Em Node, uma aplicação cria seu próprio servidor (ou mais de um) para lidar com as requisições que recebe dos clientes que se conectarem a ela. Isso é particularmente poderoso no caso de aplicações que trabalham tanto com a entrega de arquivos estáticos através de <a href="https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> ou com eventos reais através de <a href="https://pt.wikipedia.org/wiki/WebSocket">WebSockets</a>, ou mesmo no caso de outros protocolos. Aqui está um exemplo de uma aplicação que cria um servidor que responde a qualquer request com um mesmo texto.</p>
+<pre><code class="JavaScript">var http = require('http') // carregamento de modulo
+var server = http.createServer()
+server.on('request', function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'})
+    res.end('Hello World\n')
+})
+server.listen(3000)
+console.log('Server running at http://localhost:3000/')
+</code></pre>
+
+<h2 id="exercicio">Exercício</h2>
+<p>Para ter um primeiro contato com o ambiente do Node.js, vamos criar um aplicativo de chat em tempo real. Vamos utilizar alguns módulos externos (<strong>socket.io</strong> e <strong>express</strong>). Neste projeto vamos conhecer mais sobre como:</p>
+<ol>
+<li>Como importar módulos externos através do <em>NPM</em></li>
+<li>Enviar arquivos estáticos para o cliente (CSS, JS, HTML)</li>
+<li>Tratar mensagens no servidor com <a href="http://socket.io/">socket.io</a></li>
+<li>Tratar mensagens no cliente com <a href="http://socket.io/">socket.io</a></li>
+</ol></div>
+        </div>
+
+	<footer class="col-md-12">
+		<hr>
+		
+		<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+	</footer>
+
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/extra.js"></script>
+    </body>
+</html>
