@@ -291,6 +291,16 @@
             "title": "Exerc\u00edcio"
         }, 
         {
+            "location": "/materiais/", 
+            "text": "Materiais\n\n\nAqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.\n\n\n\n\n\n\n\n\nData\n\n\nLink\n\n\n\n\n\n\n\n\n\n\n12/08\n\n\nAula sobre HTML e CSS", 
+            "title": "Materiais de aula"
+        }, 
+        {
+            "location": "/materiais/#materiais", 
+            "text": "Aqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.     Data  Link      12/08  Aula sobre HTML e CSS", 
+            "title": "Materiais"
+        }, 
+        {
             "location": "/ferramentas/", 
             "text": "Ferramentas\n\n\nFerramentas que ser\u00e3o utilizadas na disciplina. Todas s\u00e3o gratuitas.\n\n\nBibliotecas\n\n\n\n\nphaser.io\n: Engine para programa\u00e7\u00e3o de jogos web mais elaborados e com grande suporte a plugins e ferramentas externas.\n\n\njQuery\n: Biblioteca com utilidades para manipula\u00e7\u00e3o de HTML em Javascript.\n\n\n\n\nOnline\n\n\n\n\nCodepen\n -\n Editor online para desenvolvimento web (cliente). Pr\u00e1tico para testes e experimentos.\n\n\nPhaser Sandbox\n -\n Editor online para experimentar com a engine \nPhaser\n.\n\n\n\n\nStandalone\n\n\n\n\nNode.js\n -\n Plataforma para a cria\u00e7\u00e3o de software em Javascript (servidor e cliente).\n\n\nBrackets\n -\n Editor de c\u00f3digo com boas features para preview de c\u00f3digo Javascript e desenvolvimento web no geral.\n\n\nWAMP Server\n -\n Programa que cria um servidor b\u00e1sico local para testes.\n\n\nGithub For Windows\n -\n Programa para facilitar o gerenciamento de reposit\u00f3rios e desenvolvimento em Windows.", 
             "title": "Ferramentas"
