@@ -8,16 +8,16 @@ Este site é a apostila digital da disciplina *Programação de jogos para web*,
 
 | Data  | Conteúdo                                                  | 
 |-------|-----------------------------------------------------------| 
-| 05/08 | [Introdução a jogos web]()                                | 
-| 12/08 | [Tecnologias da web]()                                    | 
-| 19/08 | [Introdução ao Javascript]()                              | 
-| 26/08 | [Introdução ao Phaser]() / [Organização de projeto web]() | 
-| 02/09 | [Inputs e movimento]() / Oficina de jogo individual       | 
-| 09/09 | [Workflow de assets]() / Oficina de jogo individual       | 
+| 05/08 | [Introdução a jogos web](aulas/introducao-a-jogos-web)                                | 
+| 12/08 | [Tecnologias da web](aulas/tecnologias-da-web)                                    | 
+| 19/08 | [Introdução ao Javascript](aulas/introd-javascript)                              | 
+| 26/08 | [Introdução ao Phaser](aulas/introd-phaser) / [Organização de projeto web]() | 
+| 02/09 | [Inputs e movimento](aulas/inputs-multiplataforma.md) / Oficina de jogo individual       | 
+| 09/09 | [Workflow de assets](aulas/workflow.md) / Oficina de jogo individual       | 
 | 16/09 | *Semana Integrada*                                        | 
 | 23/09 | Oficina de jogo individual                                | 
 | 30/09 | Debate sobre jogos individuais / post-mortem              | 
-| 07/10 | [Introdução a Node.js]() / Oficina de jogo coletivo       | 
+| 07/10 | [Introdução a Node.js](aulas/introd-node.md) / Oficina de jogo coletivo       | 
 | 14/10 | [Sockets e multiplayer por turnos]()                      | 
 | 21/10 | [Sockets e multiplayer em tempo real]()                   | 
 | 28/10 | [Persistência e REST]() / Oficina de jogo coletivo        | 
@@ -27,7 +27,7 @@ Este site é a apostila digital da disciplina *Programação de jogos para web*,
 | 25/11 | Debate e apresentações de jogos coletivos                 | 
 | 02/12 | [Desenvolvimento de apps para a web: MEAN]()              | 
 | 09/12 | *Feriado*                                                 | 
-| 16/12 | Fechamento da discplina                                   | 
+| 16/12 | Fechamento da disciplina                                   | 
 
 ## Plano de ensino
 
@@ -41,11 +41,11 @@ Preparar alunos para o desenvolvimento de jogos para o ambiente web. Desenvolver
 
 ### Objetivos específicos
 
-Formar um repertório de ferramentas para a criação de jogos para web. Capacitar o aluno para avaliar a adequação de diferentes técnicas e ferramentas que apóiem diferentes processos criativos de jogos para web. Elaborar documentação e reflexão apropriada e utilizar métodos de trabalho voltados para o desenvolvimento ágil. Planejar e realizar jogos para web utilizando boas práticas e metodologias consolidadas.
+Formar um repertório de ferramentas para a criação de jogos para web. Capacitar o aluno para avaliar a adequação de diferentes técnicas e ferramentas que apoiem diferentes processos criativos de jogos para web. Elaborar documentação e reflexão apropriada e utilizar métodos de trabalho voltados para o desenvolvimento ágil. Planejar e realizar jogos para web utilizando boas práticas e metodologias consolidadas.
 
 ### Conteúdo programático
 
-A importância de usar ferramentas adequadas para o desenvolvimento rápido de jogos será trabalhada através de experiências práticas de planejamento e produção de jogos digitais, assim como da apresentação de conceitos que apóiem essa prática.
+A importância de usar ferramentas adequadas para o desenvolvimento rápido de jogos será trabalhada através de experiências práticas de planejamento e produção de jogos digitais, assim como da apresentação de conceitos que apoiem essa prática.
 
 - Contexto técnico, cultural e estético de jogos na web.
 - Ferramentas para programação de jogos para web.

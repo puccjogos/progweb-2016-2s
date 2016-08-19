@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-07-28</lastmod>
+     <lastmod>2016-08-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,8 +12,66 @@
     
         
     <url>
-     <loc>None/aulas/a01-introducao-a-jogos-web/</loc>
-     <lastmod>2016-07-28</lastmod>
+     <loc>None/aulas/introducao-a-jogos-web/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/tecnologias-da-web/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/introd-javascript/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/introd-phaser/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/inputs-multiplataforma/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/workflow/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/aulas/introd-node/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/materiais/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/ferramentas/</loc>
+     <lastmod>2016-08-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/referencias/</loc>
+     <lastmod>2016-08-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

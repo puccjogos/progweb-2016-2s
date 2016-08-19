@@ -3,7 +3,16 @@ pages:
 - Home: 'index.md'
 - Aulas:
     - 'Introdução a jogos web' : 'aulas/introducao-a-jogos-web.md'
-- 'Referências' : 'referencias.md'
+    - 'Tecnologias da web' : 'aulas/tecnologias-da-web.md'
+    - 'Introdução ao Javascript' : 'aulas/introd-javascript.md'
+    - 'Introdução ao Phaser' : 'aulas/introd-phaser.md'
+    - 'Inputs multiplataforma' : 'aulas/inputs-multiplataforma.md'
+    - 'Workflow de assets e dados locais' : 'aulas/workflow.md'
+    - 'Introdução ao Node.js' : 'aulas/introd-node.md'
+- 'Mais infos' :
+    - 'Materiais de aula' : 'materiais.md'
+    - 'Ferramentas' : 'ferramentas.md'
+    - 'Referências' : 'referencias.md'
 theme: bootstrap
 extra_css:
   - css/extra.css

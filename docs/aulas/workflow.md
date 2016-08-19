@@ -1,6 +1,8 @@
+## Workflow de assets e dados locais
+
 Nesta aula, vamos trabalhar dois tópicos: o **workflow de assets** (criação, importação, ferramentas úteis) e **como salvar e recuperar dados localmente**.
 
-## Workflow de assets
+### Workflow de assets
 
 Todo asset carregado durante o `preload` passa pela classe [`Phaser.Loader`](http://docs.phaser.io/Phaser.Loader.html) e depois é armazenado, usando chaves em texto, dentro de uma única instância da classe [`Phaser.Cache`](http://docs.phaser.io/Phaser.Cache.html). Vale a pena dar uma olhada em algumas de suas funções. A classe `Cache` tem uma série de funções que permitem a [verificação se algum asset foi carregado corretamente](http://examples.phaser.io/_site/view_full.html?d=loader&f=check+cache.js&t=check%20cache).
 
@@ -44,7 +46,7 @@ Atlas são uma forma de juntar vários sprites e imagens em uma única imagem qu
 
 [Exemplo de carregamento de atlas](http://examples.phaser.io/_site/view_full.html?d=loader&f=load+texture+atlas.js&t=load%20texture%20atlas).
 
-## Dados locais
+### Dados locais
 
 Para guardar dados localmente, podemos usar a funcionalidade `localStorage`, definida e suportada nos browsers mais modernos. O seu funcionamento é bastante simples.
 

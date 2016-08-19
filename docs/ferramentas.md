@@ -1,9 +1,9 @@
+## Ferramentas
+
 Ferramentas que serão utilizadas na disciplina. Todas são gratuitas.
 
 ### Bibliotecas
 
-- [p5.js](http://p5js.org/): Engine em JS para experimentos com interação, imagem e som.
-- [p5.play](http://p5play.molleindustria.org/): Engine para programação de jogos simples e aprendizado.
 - [phaser.io](http://phaser.io/): Engine para programação de jogos web mais elaborados e com grande suporte a plugins e ferramentas externas.
 - [jQuery](https://jquery.org/): Biblioteca com utilidades para manipulação de HTML em Javascript.
 

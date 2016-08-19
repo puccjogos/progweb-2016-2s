@@ -1,6 +1,4 @@
-Aula do dia 24/09/2015.
-
----
+## Introdução ao Phaser
 
 Roteiro da aula:
 

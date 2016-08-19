@@ -1,6 +1,4 @@
-Aula do dia 01/10/15.
-
----
+## Inputs multiplataforma
 
 Exitem duas etapas principais para o desenvolvimento de sistemas de input multi-plataformas. Primeiro, é importante desacoplar as ações no mundo do jogo de um tipo de entrada. Segundo, é importante associar essa nova camada de abstração a cada uma das plataformas desejadas, adaptando conforme necessário. Para ajudar nesse processo, vamos trabalhar com a criação de objetos para auxiliar nosso input.
 
@@ -14,13 +12,39 @@ A própria biblioteca também agrupa uma série de funcionalidade de input dentr
 + Docs: [Phaser.Mouse](http://docs.phaser.io/Phaser.Mouse.html)
 + Docs: [Phaser.Gamepad](http://docs.phaser.io/Phaser.Gamepad.html)
 
-#### Teclado
+### Teclado
 
-+ Exemplo: [usando teclas direcionais](http://phaser.io/examples/v2/input/cursor-key-movement)
-+ Exemplo: [teclas com funções](http://phaser.io/examples/v2/input/keyboard-hotkeys)
-+ Exemplo: [bloquear eventos-padrão do browser](http://phaser.io/examples/v2/input/override-default-controls)
+Exemplo: [usando teclas direcionais](http://phaser.io/examples/v2/input/cursor-key-movement)
 
-#### Mouse e toque
+```javascript
+cursors = game.input.keyboard.createCursorKeys();
+...
+if (cursors.up.isDown)
+{
+    ...
+}
+```
+
+Exemplo: [teclas com funções](http://phaser.io/examples/v2/input/keyboard-hotkeys)
+
+```javascript
+key1 = game.input.keyboard.addKey(Phaser.Keyboard.ONE);
+key1.onDown.add(callback, this);
+```
+
+Exemplo: [bloquear eventos-padrão do browser](http://phaser.io/examples/v2/input/override-default-controls)
+
+```js
+game.input.keyboard.addKeyCapture([
+    Phaser.Keyboard.LEFT,
+    Phaser.Keyboard.RIGHT,
+    Phaser.Keyboard.UP,
+    Phaser.Keyboard.DOWN,
+    Phaser.Keyboard.SPACEBAR
+]);
+```
+
+### Mouse e toque
 
 Phaser usa o conceito de *pointer* tanto para o mouse quanto para interfaces de toque. A classe Pointer guarda uma série de informações relativas à posição, velocidade, id e estado dos eventos de toque e mouse.
 
@@ -29,7 +53,7 @@ Phaser usa o conceito de *pointer* tanto para o mouse quanto para interfaces de 
 + Exemplo: [multi-toque](http://examples.phaser.io/_site/view_full.html?d=input&f=multi%20touch.js&t=multi%20touch&phaser_version=v2.4.3&).
 + Exemplo: [joystick por toque](http://examples.phaser.io/_site/view_full.html?d=input&f=touch%20joystick.js&t=touch%20joystick&phaser_version=v2.4.3&)
 
-#### Gamepad
+### Gamepad
 
 O Phaser tem suporte a gamepads, como de XBox 360 ou qualquer outro conectado ao dispositivo PC. No entanto, este suporte ainda é experimental e instável.
 

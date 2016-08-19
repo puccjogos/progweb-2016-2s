@@ -1,6 +1,6 @@
-## O que é o [Node.js](https://nodejs.org/en/)?
+## Introdução ao [Node.js](https://nodejs.org/en/)
 
-É uma plataforma para executar aplicações em JavaScript que faz uso da máquina virtual V8 (a mesma do Google Chrome) para compilar JavaScript em linguagem de máquina, o que aumenta muito sua performance. A plataforma Node.js foi criada para uso em aplicações com uso intensivo de dados e comunicação em tempo real. Por isso, é cada vez mais usada em games e aplicativos web de colaboração e streaming. Por ser escrita toda em JS, a plataforma Node foi criada conta com as seguintes vantagens:
+Node.js é uma plataforma para executar aplicações em JavaScript que faz uso da máquina virtual V8 (a mesma do Google Chrome) para compilar JavaScript em linguagem de máquina, o que aumenta muito sua performance. A plataforma Node.js foi criada para uso em aplicações com uso intensivo de dados e comunicação em tempo real. Por isso, é cada vez mais usada em games e aplicativos web de colaboração e streaming. Por ser escrita toda em JS, a plataforma Node foi criada conta com as seguintes vantagens:
 
 - Permitir a criação de aplicações web com uma stack em uma única linguagem.
 - Permitir o uso nativo de JSON, um formato bastante popular para troca de dados.

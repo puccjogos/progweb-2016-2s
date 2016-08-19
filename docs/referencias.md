@@ -1,14 +1,16 @@
+## Referências 
+
 Bibliografia, links e outros materiais de referência.
 
 ### Livros
 
 - ALEX R., M. Y., HARTER. **Node.js in Practice.** [s.l.] Manning Publications, 1900. v. 1
-- **Game Programming Patterns.** Disponível em: <http://gameprogrammingpatterns.com/>. Acesso em: 27 jul. 2015. 
+- NYSTROM, R. **Game Programming Patterns.** Disponível em: <http://gameprogrammingpatterns.com/>. Acesso em: 27 jul. 2015. 
 - MADHAV, S. **Game Programming Algorithms and Techniques: A Platform-Agnostic Approach.** 1 edition ed. Indianapolis, IN: Addison-Wesley Professional, 2013. 
 - MCMILLAN, M. **Data Structures and Algorithms with JavaScript.** [s.l.] O’Reilly, 100AD. v. 1
 - MIKE CANTELON, T. H.; RAJLICH, N. **Node.js in Action.** [s.l: s.n.]. v. 1
 - OSMANI, A. **Learning JavaScript Design Patterns.** [s.l.] O’Reilly Media, 2012. v. 1
-- SHIFFMAN, D. The Nature of Code: Simulating Natural Systems with Processing. 1 edition ed. s.l.: The Nature of Code, 2012.  Disponível em: <http://natureofcode.com/book/>.
+- SHIFFMAN, D. **The Nature of Code: Simulating Natural Systems with Processing.** 1 edition ed. s.l.: The Nature of Code, 2012.  Disponível em: <http://natureofcode.com/book/>.
 - STEFANOV, S. **JavaScript Patterns.** [s.l.] O’Reilly Media, 2010. v. 1
 - TIMMS, S. **Mastering JavaScript Design Patterns.** [s.l.] Packt Publishing, 2014. v. 1
 
@@ -18,7 +20,7 @@ Bibliografia, links e outros materiais de referência.
 + [História de jogos online](http://en.wikipedia.org/wiki/History_of_online_games)
 + [Internet](http://en.wikipedia.org/wiki/Internet)
 + [História da Internet](http://en.wikipedia.org/wiki/History_of_the_Internet)
-+ [World Wide Web](http://en.wikipedia.org/wiki/World_Wide_Web))
++ [World Wide Web](http://en.wikipedia.org/wiki/World_Wide_Web)
 + [História da web](http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web)
 + [Browser](http://en.wikipedia.org/wiki/Web_browser)
 + [História dos browsers](http://en.wikipedia.org/wiki/History_of_the_web_browser)
