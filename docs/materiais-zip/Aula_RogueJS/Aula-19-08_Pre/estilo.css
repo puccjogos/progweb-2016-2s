@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.25em;
+	width: 620px;
+	margin: 2em auto;
+    background-color: #434343;
+}
+
+.historico {
+	width: 600px;
+	height: 300px;
+	min-height: 200px;
+	background-color: #dcdcdc;
+	padding: 1em;
+    overflow-y: auto;
+}
+
+.areaInput {
+    color: #fff;
+}
+
+.areaInput-msg {
+	margin: 1em;
+}
+
+.areaInput input {
+	width: 600px;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 1em;
+    background-color: #585858;
+    color: #fff;
+    border: 0;
+}
