@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+  background-color: darkgrey;
+  width: 660px;
+  padding: 0 10px;
+}
+
+#jogo {
+  background-color: #000;
+  margin: 0 auto;
+  width: 320px;
+  height: 500px;
+}

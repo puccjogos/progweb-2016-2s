@@ -1,0 +1,12 @@
+{
+    "Gosma" : {
+        "nome" : "Gosma",
+        "descricao" : "Uma gosma verde, meio quieta, mas com cara de poucos amigos.",
+        "nivel" : 0,
+        "ataque" : 1,
+        "defesa" : 2,
+        "iniciativa" : 0,
+        "vida" : 4,
+        "estado" : "passivo"
+    }
+}

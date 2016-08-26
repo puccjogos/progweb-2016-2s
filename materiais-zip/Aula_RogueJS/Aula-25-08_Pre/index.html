@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rogue!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body onload="rogue.inicializar()">
+	<div class="historico" id="historico">
+		<h2>Bem-vindo a <em>Rogue!</em></h2>
+	</div>
+	<div class="areaInput">
+		<p class="areaInput-msg" id="msgImediata">O que você vai fazer?</p> 
+        <input type="text" id="inputAcao" onchange="io.interpretarAcao(rogue)" autofocus>
+	</div>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/rogue.js"></script>
+</body>
+</html>
