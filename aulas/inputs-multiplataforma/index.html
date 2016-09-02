@@ -147,35 +147,30 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#inputs-multiplataforma">Inputs multiplataforma</a></li>
+        <li class="main active"><a href="#input-e-movimento">Input e movimento</a></li>
         
-            <li><a href="#teclado">Teclado</a></li>
+            <li><a href="#inputs-multiplataforma">Inputs multiplataforma</a></li>
         
-            <li><a href="#mouse-e-toque">Mouse e toque</a></li>
+            <li><a href="#movimento-no-phaser">Movimento no Phaser</a></li>
         
-            <li><a href="#gamepad">Gamepad</a></li>
+            <li><a href="#exercicios-em-sala">Exercícios em sala</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
+<h1 id="input-e-movimento">Input e movimento</h1>
 <h2 id="inputs-multiplataforma">Inputs multiplataforma</h2>
 <p>Exitem duas etapas principais para o desenvolvimento de sistemas de input multi-plataformas. Primeiro, é importante desacoplar as ações no mundo do jogo de um tipo de entrada. Segundo, é importante associar essa nova camada de abstração a cada uma das plataformas desejadas, adaptando conforme necessário. Para ajudar nesse processo, vamos trabalhar com a criação de objetos para auxiliar nosso input.</p>
-<p>A própria biblioteca também agrupa uma série de funcionalidade de input dentro do próprio <code>Sprite</code>, na propriedade <code>sprite.input</code>, do tipo <code>InputHandler</code>. A documentação desta classe está disponível <a href="http://docs.phaser.io/Phaser.InputHandler.html#toc0">aqui</a>.</p>
-<ul>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Input.html">Phaser.Input</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.InputHandler.html">Phaser.InputHandler</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Key.html">Phaser.Key</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Keyboard.html">Phaser.Keyboard</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Pointer.html">Phaser.Pointer</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Mouse.html">Phaser.Mouse</a></li>
-<li>Docs: <a href="http://docs.phaser.io/Phaser.Gamepad.html">Phaser.Gamepad</a></li>
-</ul>
+<p>Através da classe <code>Input</code> (<a href="http://phaser.io/docs/2.6.2/Phaser.Input.html">documentação</a>) nós temos acesso à uma série de funcionalidades para criação de inputs multiplataforma.</p>
+<p>A própria biblioteca também agrupa uma série de funcionalidades de input dentro do próprio <code>Sprite</code>, na propriedade <code>sprite.input</code>, do tipo <code>InputHandler</code> (<a href="http://phaser.io/docs/2.6.2/Phaser.InputHandler.html">documentação</a>). Com ela, podemos tratar eventos como cliques, drags, checar overlaps com pixel perfect e mais.</p>
 <h3 id="teclado">Teclado</h3>
 <p>Exemplo: <a href="http://phaser.io/examples/v2/input/cursor-key-movement">usando teclas direcionais</a></p>
-<pre><code class="javascript">cursors = game.input.keyboard.createCursorKeys();
+<pre><code class="javascript">// dentro de create()
+cursors = game.input.keyboard.createCursorKeys();
 ...
+// dentro de update()
 if (cursors.up.isDown)
 {
     ...
@@ -183,12 +178,14 @@ if (cursors.up.isDown)
 </code></pre>
 
 <p>Exemplo: <a href="http://phaser.io/examples/v2/input/keyboard-hotkeys">teclas com funções</a></p>
-<pre><code class="javascript">key1 = game.input.keyboard.addKey(Phaser.Keyboard.ONE);
+<pre><code class="javascript">// dentro de create()
+key1 = game.input.keyboard.addKey(Phaser.Keyboard.ONE);
 key1.onDown.add(callback, this);
 </code></pre>
 
 <p>Exemplo: <a href="http://phaser.io/examples/v2/input/override-default-controls">bloquear eventos-padrão do browser</a></p>
-<pre><code class="js">game.input.keyboard.addKeyCapture([
+<pre><code class="js">// dentro de create()
+game.input.keyboard.addKeyCapture([
     Phaser.Keyboard.LEFT,
     Phaser.Keyboard.RIGHT,
     Phaser.Keyboard.UP,
@@ -200,17 +197,41 @@ key1.onDown.add(callback, this);
 <h3 id="mouse-e-toque">Mouse e toque</h3>
 <p>Phaser usa o conceito de <em>pointer</em> tanto para o mouse quanto para interfaces de toque. A classe Pointer guarda uma série de informações relativas à posição, velocidade, id e estado dos eventos de toque e mouse.</p>
 <ul>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=button%20open%20popup.js&amp;t=button%20open%20popup&amp;phaser_version=v2.4.3&amp;">eventos de mouse/toque</a></li>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=out%20of%20game.js&amp;t=out%20of%20game&amp;phaser_version=v2.4.3&amp;">toque fora do jogo</a></li>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=multi%20touch.js&amp;t=multi%20touch&amp;phaser_version=v2.4.3&amp;">multi-toque</a>.</li>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=touch%20joystick.js&amp;t=touch%20joystick&amp;phaser_version=v2.4.3&amp;">joystick por toque</a></li>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/button-open-popup">eventos de mouse/toque</a></li>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/out-of-game">toque fora do jogo</a></li>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/multi-touch">multi-toque</a>.</li>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/virtual-gamecontroller">joystick por toque</a></li>
 </ul>
 <h3 id="gamepad">Gamepad</h3>
 <p>O Phaser tem suporte a gamepads, como de XBox 360 ou qualquer outro conectado ao dispositivo PC. No entanto, este suporte ainda é experimental e instável.</p>
 <ul>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=gamepad%20debug.js&amp;t=gamepad%20debug&amp;phaser_version=v2.4.3&amp;">tela de teste de gamepad</a></li>
-<li>Exemplo: <a href="http://examples.phaser.io/_site/view_full.html?d=input&amp;f=gamepad%20multiple%20pads.js&amp;t=gamepad%20multiple%20pads&amp;phaser_version=v2.4.3&amp;">múltiplos gamepads</a></li>
-</ul></div>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/gamepad-debug">tela de teste de gamepad</a></li>
+<li>Exemplo: <a href="http://phaser.io/examples/v2/input/gamepad-multiple-pads">múltiplos gamepads</a></li>
+</ul>
+<h2 id="movimento-no-phaser">Movimento no Phaser</h2>
+<h3 id="fisica-arcade">Física Arcade</h3>
+<p>Para implementar movimentação no Phaser podemos alterar diretamente as coordenadas de objetos do jogo como sprites e texto. No entanto, uma forma mais consistente e poderosa de fazer esse tipo de funcionalidade passa por utilizar o sistema de física mais básico da ferramenta: <a href="http://phaser.io/examples/v2/category/arcade-physics">Arcade Physics</a>.</p>
+<p>Usando o sistema de física Arcade, temos funções para controlar aceleração, rotação, cálculo de ângulos, colisões e overlaps, assim como colliders de vários tipos. Para jogos que não buscam um movimento físico realista, essa opção é mais que suficiente.</p>
+<h3 id="tweens">Tweens</h3>
+<p>Outra forma de movimentação possível é através de tweens (<a href="http://phaser.io/examples/v2/category/tweens">exemplos</a>). Esta é uma alternativa interessante para jogos em que colisões são desnecessárias e que permite um alto grau de controle sobre o aspecto visual e timing dos movimentos. Ela se baseia na definição de posições e tempos, assim como diferentes formas de interpolação. É possível encadear movimentos e ativá-los de acordo com o input do usuário.</p>
+<h2 id="exercicios-em-sala">Exercícios em sala</h2>
+<p>Primeiro, vamos usar materiais dos seguintes pacotes de arte aberta:</p>
+<ul>
+<li><a href="http://opengameart.org/sites/default/files/SpaceShooterRedux.zip">Space Shooter, de Kenney</a></li>
+<li><a href="http://opengameart.org/sites/default/files/Platformer%20Pack%20Redux%20%28360%20assets%29.zip">Platformer Pack Redux, de Kenney</a></li>
+</ul>
+<p>Com esses materiais vamos criar os seguintes tipos de movimento e input:</p>
+<ol>
+<li>Movimento em 4 direções com o teclado<ol>
+<li>Translação simples</li>
+<li>Com rotação</li>
+<li>Com aceleração</li>
+</ol>
+</li>
+<li>Movimento estilo plataforma com teclado e mouse</li>
+<li>Movimento analógico com o mouse / toque</li>
+<li>Objetos perseguindo outros objetos</li>
+</ol></div>
         </div>
 
 	<footer class="col-md-12">

@@ -4,10 +4,7 @@
  * @class MC
  * @classdesc Estado que contém o jogo inteiro.
  */
-var MC = (function () {
-    "use strict";
-    return {};
-}());
+var MC = {};
 
 /**
  * @class City
@@ -243,3 +240,18 @@ MC.render = function () {
 
 // Cria o objeto jogo e o liga ao HTML
 MC.game = new Phaser.Game(320, 500, Phaser.CANVAS, 'jogo', MC);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

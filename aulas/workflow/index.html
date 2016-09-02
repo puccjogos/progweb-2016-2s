@@ -158,35 +158,35 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h2 id="workflow-de-assets-e-dados-locais">Workflow de assets e dados locais</h2>
+<h1 id="workflow-de-assets-e-dados-locais">Workflow de assets e dados locais</h1>
 <p>Nesta aula, vamos trabalhar dois tópicos: o <strong>workflow de assets</strong> (criação, importação, ferramentas úteis) e <strong>como salvar e recuperar dados localmente</strong>.</p>
-<h3 id="workflow-de-assets">Workflow de assets</h3>
+<h2 id="workflow-de-assets">Workflow de assets</h2>
 <p>Todo asset carregado durante o <code>preload</code> passa pela classe <a href="http://docs.phaser.io/Phaser.Loader.html"><code>Phaser.Loader</code></a> e depois é armazenado, usando chaves em texto, dentro de uma única instância da classe <a href="http://docs.phaser.io/Phaser.Cache.html"><code>Phaser.Cache</code></a>. Vale a pena dar uma olhada em algumas de suas funções. A classe <code>Cache</code> tem uma série de funções que permitem a <a href="http://examples.phaser.io/_site/view_full.html?d=loader&amp;f=check+cache.js&amp;t=check%20cache">verificação se algum asset foi carregado corretamente</a>.</p>
 <p>Quando os arquivos são carregados (durante o <code>preload</code>), o Phaser dispara uma série de eventos que podemos usar para dar feedback ou criar funções em momentos específicos. Pode ser interessante para avisar os jogadores de carregamentos intermediários. <a href="http://examples.phaser.io/_site/view_full.html?d=loader&amp;f=load+events.js&amp;t=load%20events">Veja o exemplo</a>.</p>
 <p>Outros exemplos interessantes estão disponíveis <a href="http://phaser.io/examples/v2/category/loader">aqui</a>.</p>
-<h4 id="imagens">Imagens</h4>
+<h3 id="imagens">Imagens</h3>
 <pre><code class="javascript">game.load.image('imageKey', 'assets/sprites/phaser2.png');
 </code></pre>
 
-<h4 id="spritesheets">Spritesheets</h4>
+<h3 id="spritesheets">Spritesheets</h3>
 <pre><code class="javascript">game.load.spritesheet('animado', 'assets/sprites/sprites.png', 32, 32);
 sprite.animations.add('walk');
 sprite.animations.play('walk', 50, true);
 </code></pre>
 
-<h4 id="tilemaps">Tilemaps</h4>
+<h3 id="tilemaps">Tilemaps</h3>
 <p>Para carregar mapas, são necessárias duas informações diferentes: o <em>tilemap</em>, com as informações sobre a disposição dos tiles no level em questão, e o <em>tileset</em>, que é a imagem de referência.</p>
 <p><a href="http://examples.phaser.io/_site/view_full.html?d=loader&amp;f=load+tilemap+json.js&amp;t=load%20tilemap%20json">Exemplo</a></p>
-<h4 id="sons">Sons</h4>
+<h3 id="sons">Sons</h3>
 <pre><code class="javascript">game.load.audio('boden', ['assets/audio/bodenstaendig_2000_in_rock_4bit.mp3', 'assets/audio/bodenstaendig_2000_in_rock_4bit.ogg']);
 </code></pre>
 
 <p><a href="http://examples.phaser.io/_site/view_full.html?d=loader&amp;f=load+audio.js&amp;t=load%20audio">Exemplo: Som</a></p>
 <p>Uma outra possibilidade interessante relacionada a importação de sons dentro de um jogo HTML5 é o conceito de <em>audiosprites</em>, ou seja, um único arquivo contendo vários sons diferentes. Esses trechos diferentes são anotados em um arquivo externo ou configurados diretamente. Com esse audiosprite, é possível tocar vários sons ao mesmo tempo em um grande número de browsers, o que é uma limitação atual em dispositivos móveis.</p>
-<h4 id="atlas">Atlas</h4>
+<h3 id="atlas">Atlas</h3>
 <p>Atlas são uma forma de juntar vários sprites e imagens em uma única imagem que tem um arquivo auxiliar informando o nome e coordenadas de cada um dos sprites que a compõem. O objetivo com isso é economizar carregamento e memória, o que pode ser essencial quando o jogo for lançado. Os custos de servidor e a performance em dispositivos móveis são bastante beneficiados pelo uso de atlas. Algumas ferramentas que podem gerar atlas: <a href="http://renderhjs.net/shoebox/">ShoeBox</a> e <a href="https://www.codeandweb.com/texturepacker">TexturePacker</a>.</p>
 <p><a href="http://examples.phaser.io/_site/view_full.html?d=loader&amp;f=load+texture+atlas.js&amp;t=load%20texture%20atlas">Exemplo de carregamento de atlas</a>.</p>
-<h3 id="dados-locais">Dados locais</h3>
+<h2 id="dados-locais">Dados locais</h2>
 <p>Para guardar dados localmente, podemos usar a funcionalidade <code>localStorage</code>, definida e suportada nos browsers mais modernos. O seu funcionamento é bastante simples.</p>
 <pre><code class="javascript">// para gravar
 localStorage.setItem('nomeInfo', 'conteudo');

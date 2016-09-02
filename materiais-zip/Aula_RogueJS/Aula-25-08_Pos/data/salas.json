@@ -1,0 +1,14 @@
+{
+    "Hall de entrada" : {
+        "nome" : "Hall de entrada",
+        "msg" : "Ao norte está um portão meio quebrado, com marcas de arranhões e ferrugem.",
+        "inimigos" : [],
+        "conexoes" : ["Corredor azul"]
+    },
+    "Corredor azul" : {
+        "nome" : "Corredor azul",
+        "msg" : "Um longo corredor sombrio com uma porta ao norte e outra ao sul.",
+        "inimigos" : ["Gosma"],
+        "conexoes" : ["Sala do trono", "", "Hall de entrada"]
+    }
+}
