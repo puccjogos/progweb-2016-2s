@@ -159,7 +159,7 @@
             <div class="col-md-9" role="main">
 
 <h1 id="workflow-de-assets-e-dados-locais">Workflow de assets e dados locais</h1>
-<p>Nesta aula, vamos trabalhar dois tópicos: o <strong>workflow de assets</strong> (criação, importação, ferramentas úteis) e <strong>como salvar e recuperar dados localmente</strong>.</p>
+<p>Nesta aula, vamos trabalhar dois tópicos: o <strong>workflow de assets</strong> (criação, importação, ferramentas úteis) e <strong>como salvar e recuperar dados localmente</strong>. Os materiais básicos estão <a href="../../materiais-zip/Aula_Workflow.zip">neste link</a></p>
 <h2 id="workflow-de-assets">Workflow de assets</h2>
 <p>Todo asset carregado durante o <code>preload</code> passa pela classe <a href="http://docs.phaser.io/Phaser.Loader.html"><code>Phaser.Loader</code></a> e depois é armazenado, usando chaves em texto, dentro de uma única instância da classe <a href="http://docs.phaser.io/Phaser.Cache.html"><code>Phaser.Cache</code></a>. Vale a pena dar uma olhada em algumas de suas funções. A classe <code>Cache</code> tem uma série de funções que permitem a <a href="http://phaser.io/examples/v2/loader/check-cache">verificação se algum asset foi carregado corretamente</a>.</p>
 <p>Quando os arquivos são carregados (durante o <code>preload</code>), o Phaser dispara uma série de eventos que podemos usar para dar feedback ou criar funções em momentos específicos. Pode ser interessante para avisar os jogadores de carregamentos intermediários. <a href="http://phaser.io/examples/v2/loader/load-events">Veja o exemplo</a>.</p>
