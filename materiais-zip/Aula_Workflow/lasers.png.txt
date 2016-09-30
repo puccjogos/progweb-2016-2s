@@ -1,0 +1,1 @@
+lasers_01.png.png 0 0, lasers_02.png.png 101 4, lasers_03.png.png 149 4.

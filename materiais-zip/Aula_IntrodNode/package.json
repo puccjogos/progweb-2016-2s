@@ -1,0 +1,15 @@
+{
+  "name": "chat-introd-node",
+  "version": "0.0.1",
+  "description": "Chat em tempo real usando socket.io e express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enric Llagostera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8",
+  }
+}

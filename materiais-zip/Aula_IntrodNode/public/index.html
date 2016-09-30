@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>chat de exemplo</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        #historico {
+            width: 100%;
+            height: 300px;
+        }
+
+        #mensagens { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow-y: scroll;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #mensagens li { 
+            padding: 5px 10px; 
+        }
+
+        #mensagens li:nth-child(odd) { 
+            background: #eee; 
+        }
+
+        #formulario input {
+            width: 340px;
+        }
+    
+    </style>
+  </head>
+  <body>
+    <div id='historico'>
+        <ul id="mensagens"></ul>
+    </div>
+    <form action="" id="formulario">
+      <input id="enviar" autocomplete="off" /><button>Enviar</button>
+    </form>
+    <!-- logica vem aqui -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script>
+      var socket = io();
+
+      $("form").submit(function () {
+        socket.emit('msg-chat', $("#enviar").val());
+        $("#enviar").val("");
+        return false;
+      });
+
+      socket.on('msg-chat-servidor', function(msg){
+        var nova = $('#mensagens').append($('<li>').text(msg))
+        $("#mensagens li").last()[0].scrollIntoView();
+      });
+    </script>
+  </body>
+</html>
