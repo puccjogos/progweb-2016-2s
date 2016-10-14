@@ -4,7 +4,8 @@ var estado = {};
 var jogo = new Phaser.Game(960, 640, Phaser.AUTO, "jogo", estado);
 
 var telaInicial = new Phaser.State();
-    telaInicial.key = "inicio";
+
+telaInicial.key = "inicio";
 
 estado.preload = function () {
     "use strict";
@@ -32,7 +33,7 @@ estado.create = function () {
     estado.mapa.setCollisionBetween(0, 43);
     estado.mapa.addTilesetImage("Tileset", "tiles");
     estado.paredes = estado.mapa.createLayer("Paredes");
-    estado.paredes.resizeWorld();    
+    estado.paredes.resizeWorld();
     estado.laserAzul = jogo.add.sprite(400, 300, "laserAzul");
     estado.laserAzul.animations.add("brilhar", [0, 1, 2, 3], 12, true);
     estado.laserAzul.animations.play("brilhar");
@@ -49,7 +50,7 @@ estado.update = function () {
         estado.nave.body.velocity.setTo(0, 0);
     }
     jogo.physics.arcade.collide(estado.nave, estado.paredes);
-    if(jogo.input.activePointer.justPressed(30)) {
+    if (jogo.input.activePointer.justPressed(30)) {
         jogo.sound.play("somLaser", 1, false);
     }
 };

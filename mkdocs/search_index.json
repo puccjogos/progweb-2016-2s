@@ -326,13 +326,33 @@
             "title": "index.html do exemplo"
         }, 
         {
+            "location": "/aulas/multiplayer-turnos/", 
+            "text": "Multiplayer por turnos\n\n\nPara exemplificar o desenvolvimento de um jogo online multiplayer por turnos, vamos implementar de forma b\u00e1sica o jogo \nOthello\n. Principais caracter\u00edsticas dessa implementa\u00e7\u00e3o est\u00e3o detalhadas abaixo.\n\n\nServidor\n\n\n\n\nUtilizar websockets para estabelecer canais de comunica\u00e7\u00e3o;\n\n\nManter todo o estado do jogo e distribuir essa informa\u00e7\u00e3o aos clientes;\n\n\nPermitir a cria\u00e7\u00e3o de partidas simult\u00e2neas;\n\n\nDistribuir novos jogadores automaticamente;\n\n\n\n\nCliente\n\n\n\n\nOrganizar intera\u00e7\u00e3o do jogador baseado no estado do tabuleiro;\n\n\nRenderizar o tabuleiro e comunicar fluxo do jogo;\n\n\n\n\nAqui est\u00e1 o \nlink para download\n de um exemplo com boa parte da l\u00f3gica b\u00e1sica funcional, o qual vamos expandir durante a aula.", 
+            "title": "Multiplayer por turnos"
+        }, 
+        {
+            "location": "/aulas/multiplayer-turnos/#multiplayer-por-turnos", 
+            "text": "Para exemplificar o desenvolvimento de um jogo online multiplayer por turnos, vamos implementar de forma b\u00e1sica o jogo  Othello . Principais caracter\u00edsticas dessa implementa\u00e7\u00e3o est\u00e3o detalhadas abaixo.", 
+            "title": "Multiplayer por turnos"
+        }, 
+        {
+            "location": "/aulas/multiplayer-turnos/#servidor", 
+            "text": "Utilizar websockets para estabelecer canais de comunica\u00e7\u00e3o;  Manter todo o estado do jogo e distribuir essa informa\u00e7\u00e3o aos clientes;  Permitir a cria\u00e7\u00e3o de partidas simult\u00e2neas;  Distribuir novos jogadores automaticamente;", 
+            "title": "Servidor"
+        }, 
+        {
+            "location": "/aulas/multiplayer-turnos/#cliente", 
+            "text": "Organizar intera\u00e7\u00e3o do jogador baseado no estado do tabuleiro;  Renderizar o tabuleiro e comunicar fluxo do jogo;   Aqui est\u00e1 o  link para download  de um exemplo com boa parte da l\u00f3gica b\u00e1sica funcional, o qual vamos expandir durante a aula.", 
+            "title": "Cliente"
+        }, 
+        {
             "location": "/materiais/", 
-            "text": "Materiais\n\n\nAqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.\n\n\n\n\n\n\n\n\nData\n\n\nLink\n\n\n\n\n\n\n\n\n\n\n12/08\n\n\nAula sobre HTML e CSS\n\n\n\n\n\n\n19/08\n\n\nRogueJS\n\n\n\n\n\n\n25/08\n\n\nMissile Command\n\n\n\n\n\n\n09/09\n\n\nWorkflow", 
+            "text": "Materiais\n\n\nAqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.\n\n\n\n\n\n\n\n\nData\n\n\nLink\n\n\n\n\n\n\n\n\n\n\n12/08\n\n\nAula sobre HTML e CSS\n\n\n\n\n\n\n19/08\n\n\nRogueJS\n\n\n\n\n\n\n25/08\n\n\nMissile Command\n\n\n\n\n\n\n09/09\n\n\nWorkflow\n\n\n\n\n\n\n30/09\n\n\nIntrodu\u00e7\u00e3o a Node\n\n\n\n\n\n\n30/09\n\n\nOthello Turnos (pr\u00e9-aula)", 
             "title": "Materiais de aula"
         }, 
         {
             "location": "/materiais/#materiais", 
-            "text": "Aqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.     Data  Link      12/08  Aula sobre HTML e CSS    19/08  RogueJS    25/08  Missile Command    09/09  Workflow", 
+            "text": "Aqui voc\u00ea encontra os materiais produzidos em sala de aula, como exemplos, exerc\u00edcios, etc.     Data  Link      12/08  Aula sobre HTML e CSS    19/08  RogueJS    25/08  Missile Command    09/09  Workflow    30/09  Introdu\u00e7\u00e3o a Node    30/09  Othello Turnos (pr\u00e9-aula)", 
             "title": "Materiais"
         }, 
         {
