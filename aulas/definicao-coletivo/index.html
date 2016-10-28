@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Multiplayer por turnos - ProgWeb - 2016 - 2S</title>
+	<title>Oficina de jogos coletivos - ProgWeb - 2016 - 2S</title>
 
         <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -89,12 +89,12 @@
                             <a href="../introd-node/">Introdução ao Node.js</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Multiplayer por turnos</a>
+                        <li >
+                            <a href="../multiplayer-turnos/">Multiplayer por turnos</a>
                         </li>
                     
-                        <li >
-                            <a href="../definicao-coletivo/">Oficina de jogos coletivos</a>
+                        <li class="active">
+                            <a href="./">Oficina de jogos coletivos</a>
                         </li>
                     
                     </ul>
@@ -127,12 +127,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../introd-node/">
+                    <a rel="next" href="../multiplayer-turnos/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../definicao-coletivo/">
+                    <a rel="prev" href="../../materiais/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -155,32 +155,23 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#multiplayer-por-turnos">Multiplayer por turnos</a></li>
-        
-            <li><a href="#servidor">Servidor</a></li>
-        
-            <li><a href="#cliente">Cliente</a></li>
+        <li class="main active"><a href="#oficina-de-jogos-coletivos">Oficina de jogos coletivos</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="multiplayer-por-turnos">Multiplayer por turnos</h1>
-<p>Para exemplificar o desenvolvimento de um jogo online multiplayer por turnos, vamos implementar de forma básica o jogo <a href="http://www.hannu.se/games/othello/rules.htm">Othello</a>. Principais características dessa implementação estão detalhadas abaixo.</p>
-<h3 id="servidor">Servidor</h3>
+<h1 id="oficina-de-jogos-coletivos">Oficina de jogos coletivos</h1>
+<p>Vamos dedicar a aula de hoje a trabalhar nos projetos de jogo coletivo, preparando as ideias e configurando o básico do projeto. Vamos seguir as seguintes etapas:</p>
 <ol>
-<li>Utilizar websockets para estabelecer canais de comunicação;</li>
-<li>Manter todo o estado do jogo e distribuir essa informação aos clientes;</li>
-<li>Permitir a criação de partidas simultâneas;</li>
-<li>Distribuir novos jogadores automaticamente;</li>
-</ol>
-<h3 id="cliente">Cliente</h3>
-<ol>
-<li>Organizar interação do jogador baseado no estado do tabuleiro;</li>
-<li>Renderizar o tabuleiro e comunicar fluxo do jogo;</li>
-</ol>
-<p>Aqui está o <a href="../../materiais-zip/Aula_OthelloTurnos_Pre.zip">link para download</a> de um exemplo com boa parte da lógica básica funcional, o qual vamos expandir durante a aula.</p></div>
+<li>Definir dupla.</li>
+<li>Decidir quais features vai incorporar: persistência ou integração com serviços.</li>
+<li>Preparar SGDD do jogo.</li>
+<li>Aprovar ideia.</li>
+<li>Preparar estrutura de comunicação entre cliente e servidor.</li>
+<li>Criar projeto de Node e preparar sua estrutura básica.</li>
+</ol></div>
         </div>
 
 	<footer class="col-md-12">
