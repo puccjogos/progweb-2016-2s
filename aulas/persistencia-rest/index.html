@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Oficina de jogos coletivos - ProgWeb - 2016 - 2S</title>
+	<title>Persistência e REST - ProgWeb - 2016 - 2S</title>
 
         <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -93,12 +93,12 @@
                             <a href="../multiplayer-turnos/">Multiplayer por turnos</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Oficina de jogos coletivos</a>
+                        <li >
+                            <a href="../definicao-coletivo/">Oficina de jogos coletivos</a>
                         </li>
                     
-                        <li >
-                            <a href="../persistencia-rest/">Persistência e REST</a>
+                        <li class="active">
+                            <a href="./">Persistência e REST</a>
                         </li>
                     
                     </ul>
@@ -131,12 +131,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../multiplayer-turnos/">
+                    <a rel="next" href="../definicao-coletivo/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../persistencia-rest/">
+                    <a rel="prev" href="../../materiais/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -159,23 +159,59 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#oficina-de-jogos-coletivos">Oficina de jogos coletivos</a></li>
+        <li class="main active"><a href="#persistencia-e-rest">Persistência e REST</a></li>
+        
+            <li><a href="#json">JSON</a></li>
+        
+            <li><a href="#rest-apis">REST APIs</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="oficina-de-jogos-coletivos">Oficina de jogos coletivos</h1>
-<p>Vamos dedicar a aula de hoje a trabalhar nos projetos de jogo coletivo, preparando as ideias e configurando o básico do projeto. Vamos seguir as seguintes etapas:</p>
-<ol>
-<li>Definir dupla.</li>
-<li>Decidir quais features vai incorporar: persistência ou integração com serviços.</li>
-<li>Preparar SGDD do jogo.</li>
-<li>Aprovar ideia.</li>
-<li>Preparar estrutura de comunicação entre cliente e servidor.</li>
-<li>Criar projeto de Node e preparar sua estrutura básica.</li>
-</ol></div>
+<h1 id="persistencia-e-rest">Persistência e REST</h1>
+<p>Nesta aula, vamos conhecer como criar persistência em nossos jogos de forma simples e rápida usando Node.js e arquivos JSON. Também vamos começar a trabalhar com APIs REST. Os exemplos que vamos utilizar em aula podem ser baixados aqui: <a href="../../materiais-zip/Aula_FlappyHighscore.zip">exemplo1</a> e <a href="../../materiais-zip/Aula_PersistenciaREST.zip">exemplo 2</a>.</p>
+<h3 id="json">JSON</h3>
+<p>A primeira alternativa que vamos ver para a persistência de dados no servidor é o uso de arquivos JSON. É uma forma bastante básica, mas que pode ser a base para alternativas mais elaboradas posteriores, como o uso de bancos de dados <strong>NoSQL</strong>, como o <a href="https://www.mongodb.org/">MongoDB</a>.</p>
+<p>Para ler e escrever arquivos, vamos usar o módulo <code>fs</code> do Node. Primeiro, vamos escrevê-los como arquivos de texto e depois, como JSON diretamente. O exemplo abaixo escreve o texto do arquivo diretamente.</p>
+<pre><code class="javascript">var fs = require(&quot;fs&quot;)
+
+// leitura de arquivo
+fs.readFile(
+  &quot;data/usuarios.json&quot;, // endereco
+  &quot;utf8&quot;,       // encoding
+  function(err, data){  // callback
+    if(err){
+      throw err
+    }
+    usuarios = JSON.parse(data)
+  })
+
+// escrita
+fs.writeFile(
+  &quot;data/usuarios.json&quot;,     // endereco
+  JSON.stringify(usuarios),     // dados
+  &quot;utf8&quot;,           // encoding
+  function(err) {       // callback
+    if(err) {
+        return console.log(err)
+    }
+    console.log(&quot;Usuarios.json foi salvo!&quot;)
+  })
+</code></pre>
+
+<h3 id="rest-apis">REST APIs</h3>
+<p>APIs (<em>interfaces para programação de aplicações</em>) do tipo REST são um tipo de protocolo para a comunicação entre cliente e servidor. Seus principais diferenciais são:</p>
+<ul>
+<li>Cada pedido é independente de outros e não exige que o servidor guarde dados entre pedidos (estado)</li>
+<li>Interface padrão: comandos <strong>GET</strong> (buscar), <strong>POST</strong> (escrever), <strong>PUT</strong> (sobre-escrever), <strong>DELETE</strong> (apagar)</li>
+<li>Uso de resultados e informações em formatos hipermídia / hipertexo: HMTL, XML, JSON</li>
+<li>Sintaxe universal, através do uso de endereços URI (<em>Universal Resource Identifier</em>)</li>
+</ul>
+<p>A arquitetura de API que segue esses princípios é bastante utilizada para serviços web, ou seja, como forma de acessar e escrever informações no banco de dados de serviços hospedados em servidores remotos e públicos. Assim, serviços web podem agregar valor ao permitir que outros serviços secundários integrem-se à sua rede. Por exemplo, jogos que se conectam ao Facebook para acessar os amigos de um usuário e realizar cross-promotion.</p>
+<p>Para ter mais controle em relação a quem acessa as informações de seus banco de dados, é comum que provedores de serviços exijam que todo acesso à seus serviços sejam autenticados, ou seja, estejam associados a uma chave ou autorização em seu banco.</p>
+<p>Como exemplo de implementação, vamos usar as ferramentas de routing do ExpressJS em Node (para o lado do backend) e as ferramentas de request da biblioteca jQuery (para o lado frontend).</p></div>
         </div>
 
 	<footer class="col-md-12">
